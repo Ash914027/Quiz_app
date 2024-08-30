@@ -1,0 +1,150 @@
+ /* Style.css */
+
+ * {
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.quiz,
+.scores {
+    margin: 50px auto 0 auto;
+    max-width: 400px;
+}
+
+#top {
+    color: rgb(23, 49, 215);
+}
+
+.containerNew {
+    border: 5px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 580px;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+p {
+    margin: 15px 15px;
+}
+
+.landing {
+    text-align: center;
+}
+
+.scoresHeader {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.timer {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4e7bf7;
+    border-radius: 5px;
+    border: 0;
+    padding: 20px;
+}
+
+button:hover {
+    background-color: #4919f5;
+}
+
+.options button {
+    display: block;
+}
+
+input[type="text"] {
+    font-size: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.feedback {
+    font-style: bold;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 15px;
+    color: #fff;
+    border-top: 2px solid #4B0082;
+}
+
+ol {
+    padding-left: 15px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+li {
+    padding: 5px;
+    list-style: decimal inside none;
+}
+
+li:nth-child(odd) {
+    background-color: #dfdae7;
+}
+
+@media screen and (max-width: 768px) {
+    .containerNew {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .containerNew {
+        width: 90%;
+    }
+
+    .quiz,
+    .scores {
+        max-width: 90%;
+    }
+}
+/* Add to your existing CSS */
+.quiz-status {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.quiz-status h3 {
+    margin-top: 0;
+}
+
+#status-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#status-list li {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.not-attended {
+    background-color: #ff6b6b; /* Red */
+}
+
+.marked-for-review {
+    background-color: #f39c12; /* Orange */
+}
+
+.attempted {
+    background-color: #2ecc71; /* Green */
+}
